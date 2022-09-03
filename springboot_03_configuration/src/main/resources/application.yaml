@@ -1,0 +1,31 @@
+#服务器配置端口
+server:
+  port: 131
+
+#关闭 banner
+spring:
+  main:
+    banner-mode: off
+
+user:
+  name: Qingyuan
+  age: 100
+
+likes:
+  - game
+  - music
+  - play
+
+baseDir: c:\windows
+
+#使用${属性名}引用数据
+tempDir: ${baseDir}\temp
+
+# 创建一个类用于封装数据
+# 由spring将数据加载到对象中
+# 使用时从spring中直接获取信息使用
+datasource:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost/springboot_db
+  username: root
+  password: root123
